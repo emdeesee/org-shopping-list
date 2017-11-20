@@ -1,0 +1,39 @@
+* org-shopping-list
+
+org-shopping-list is a simple shopping list application implemented on
+Org for Emacs.
+
+** Installation
+
+Get the code by cloning the repository: 
+~git clone https://github.com/emdeesee/org-shopping-list.git~
+
+Load the library in your emacs session. Add the following code, or
+something similar to init.el
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path <path to parent directory of clone repository>)
+(load-library "org-shopping-list")
+#+END_SRC
+
+** Usage
+
+By default your shopping list will be stored in
+"\~/Org/shopping-list.org". This value is stored in the variable
+~org-shopping-list-file~; you can change this setting to suit your
+needs.
+
+Your shopping list uses the todo keywords HAVE and NEED. The
+interactive command ~org-shopping-list-add~ is used to add items to
+the list. It will search for the item, and simply toggle it to a NEED
+state if it's already there.
+
+To see your list, ~M-x org-shopping-list-show~ will open an agenda
+view buffer with your list. When you're done, 's' will save your
+shopping list.
+
+** TODO [0/3] Some things to add
+- [ ] Keybindings for add/show
+- [ ] Customization for keywords and shopping list file
+- [ ] Packaging
+
