@@ -2,6 +2,23 @@
 ;; shopping list is a todo list with the todo keywords HAVE and
 ;; NEED. A list of needed items can be viewed by using the org-mode
 ;; agenda commands, C-c a S NEED [RET].
+;;
+;; Copyright 2014-2017 Michael Cornelius
+;; This file is part of org-shopping-list.
+;;
+;; org-shopping-list is free software: you can redistribute it and/or
+;; modify it under the terms of the GNU General Public License as
+;; published by the Free Software Foundation, either version 3 of the
+;; License, or (at your option) any later version.
+;;
+;; org-shopping-list is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with org-shopping-list.  If not, see
+;; <http://www.gnu.org/licenses/>.
 
 (provide 'org-shopping-list)
 
